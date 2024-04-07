@@ -1,0 +1,177 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #ccc;
+}
+/* Inicio do Cabeçalho */
+header {
+
+    height: 65px;
+    width: 100%;
+    background-color: #9932CC;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-left: 10px;
+   
+}
+
+header .barra_usuario {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+/* Logo da Empresa */
+header #logo img {
+   width: 40px;
+    
+}
+/* Barra de Pesquisa */
+
+header .barra_pesquisa input {
+    margin-top: 5px;
+    width: 400px;
+    height: 25px;
+    border-radius: 5px;
+    
+
+}
+/* Botao Barra de Pesquisa */
+
+header .botao_pesquisa button {
+    margin-top: 5px;
+    width: 60px;
+    height: 25px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+header .botao_pesquisa button:hover{
+    background-color: #ccc;
+    
+}
+
+/* Ferramentas do Usuario */
+
+header .ferramentas_usu {
+    margin-top: 5px;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+    
+}
+
+/* Notificações do Usuario */
+
+header .notifica  img {
+    width: 40px;
+    height: 35px;
+    margin-right: 10px;
+    cursor: pointer;
+
+}
+header .notifica  img:hover {
+    width: 50px;
+    height: 45px;
+}
+
+/* COnfigurações do Usuario */
+
+header .config_usu img{
+    width: 40px;
+    height: 35px;
+    margin-right: 50px;
+    cursor: pointer;
+
+}
+
+header .config_usu img:hover {
+    width: 50px;
+    height: 45px;
+}
+
+/* Imagem de PErfil do Usuario */
+header .icon_usu img{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+
+}
+header .icon_usu img:hover {
+    width: 50px;
+    height: 50px;
+}
+
+/* FIm do Cabeçalho */
+.main_container{
+    display: flex;
+    
+}
+/* Menu Lateral */
+.sidebar {
+    margin: 20px;
+    background-color: #9932CC;
+    width: 10%;
+    height: 500px;
+    padding: 10px;
+}
+/* Lista de ferramentas */
+.sidebar ul {
+    list-style: none;
+}
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+.sidebar ul li button{
+    width: 110px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 5px;
+    
+
+}
+.sidebar ul li button:hover {
+   background-color: #ccc;
+   
+}
+
+/* Conteúdo da Pagina Principal */
+main {
+    background-color: white;
+    width: 90%;
+    height: 500px;
+    margin: 20px;
+}
+
+
+
+
+/* Rodapé */
+
+footer {
+
+    background-color: #9932CC;
+    width: 100%;
+    height: 50px;
+    text-align: end;
+    padding-right: 10px;
+    
+}
+
+footer a {
+    color: white;
+    margin-left: 10px;
+    
+}
+
+/* Fim do Rodapé */
+
+
