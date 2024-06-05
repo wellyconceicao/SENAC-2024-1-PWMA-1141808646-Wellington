@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gestaoCli.css">
+    <script type="text/javascript" src="cadastro.js" ></script>
+
+
+   
+</head>
+
+<body page="cadastro">
+
+    <!-- Ínicio do Cabeçalho -->
+
+    <header>
+
+
+        <!-- Imagem do Logo da Loja em Questão -->
+        <div id="logo">
+            <a href="index.html">
+                <img src="img/icons/guarda-roupa.png" alt="Logo Da Empresa">
+            </a>
+        </div>
+
+        <!-- Ferramentas do Usuario -->
+        <div class="ferramentas_usu">
+            <ul>
+                <li id="notificacao">
+                    <a href="">
+                        <i class="fa-solid fa-bell"></i>
+                    </a>
+                </li>
+                <li id="configuracao-usu">
+                    <a href="">
+                        <i class="fa-solid fa-gear"></i>
+                    </a>
+
+                </li>
+                <li id="perfil-usu">
+                    <a href="">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+
+                </li>
+            </ul>
+
+        </div>
+
+    </header>
+
+    <!-- Fim do Cabeçalho -->
+
+
+
+    <div class="main_container">
+
+        <!-- Barra de menu lateral -->
+        <div class="sidebar">
+            <nav class="side_bar_navigation">
+
+                <ul class="itens-barra-lateral">
+                    <li id="item-barra-lateral">
+                        <a href="">
+
+                            <i class="fa-solid fa-address-card"></i>
+                            <p>Cadastro De Clientes</p>
+                        </a>
+                    </li>
+                    <li id="item-barra-lateral">
+                        <a href="historico.html">
+                            <i class="fa-solid fa-clock-rotate-left"></i>
+                            <p>Histórico De Compras</p>
+                        </a>
+                    </li>
+                    <li id="item-barra-lateral">
+                        <a href="">
+                            <i class="fa-solid fa-hand-holding-heart"></i>
+                            <p>Programa De Fidelidade</p>
+                        </a>
+
+                    </li>
+                    <li id="item-barra-lateral">
+                        <a href="">
+                            <i class="fa-solid fa-percent"> </i>
+                            <p>Promoções</p>
+                        </a>
+                    </li>
+                    <li id="item-barra-lateral">
+                        <a href="">
+                            <i class="fa-solid fa-comments"></i>
+                            <p>Comunicação</p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+
+        <!-- Formulario de Cadastro Cliente -->
+        <main>
+            <div id="cadastroCliente">
+
+            
+            <h1>Cadastro Cliente</h1>
+            <form action="#">
+                <fieldset class="dadosPessoais">
+                    <p id="dadosP">DADOS PESSOAIS</p>
+                    <div id="nomeSobre">
+                        <label for="nomeCli">Nome:</label>
+                        <input type="text" name="nomeCli" id="nomeCli" placeholder="Insira o Nome" required>
+                        <label for="nomeCli">Sobrenome:</label>
+                        <input type="text" name="sobrenomeCli" id="sobrenomeCli" placeholder="Insira o SobreNome" required>
+
+                    </div>
+                    <div id="nasc_cpf">
+                        <label for="data_nasc">Data de Nascimento:</label>
+                        <input type="date" name="data_nasc" id="data_nasc" required>
+                        <label for="cpf">CPF:</label>
+                        <input type="text" name="cpf" id="cpf" placeholder="999.999.999-99" required>
+                    </div>
+
+
+
+
+                </fieldset>
+
+                <fieldset id="endereco">
+                    <p>ENDEREÇO</p>
+                    <div id="ruaBairro">
+                        <label for="">Rua: </label>
+                        <input type="text" name="rua" id="rua" placeholder="Informe o Endereço e o Número" required>
+                        
+                    </div>
+                    <div id="cidadeEstado">
+
+
+                        <label for="">Cidade: </label>
+                        <input type="text" name="cidade" id="cidade"   placeholder="Informe a cidade" required>
+
+                    </div>
+
+                </fieldset>
+
+
+                <fieldset id="contato">
+                    <p>CONTATO</p>
+                    <div id="telFix_Cel">
+                        <label for="telFixo">Telefone Fixo: </label>
+                        <input type="tel" name="telFixo" id="telFixo" placeholder="(99) 9999-9999" required>
+                        <label for="cel">Celular:</label>
+                        <input type="tel" name="cel" id="cel" placeholder="(99) 99999-9999" required>
+                    </div>
+                    <div>
+                        <label for="emailCli">Email:</label>
+                        <input type="email" id="emailCli" name="emailCli" placeholder="Informe o Email" required>
+                    </div>
+
+                </fieldset>
+               
+                <div>
+                    <button type="submit">Salvar</button>
+                    <button onclick="visualizar('lista')" type="button" > Cancelar </button>
+                </div>
+            </form>
+           
+
+            
+
+        </div>
+
+
+            <div id="listaClientes">
+                <table>
+                    <thead>
+                        <tr>
+                        <th>Nome</th>
+                        <th>Sobrenome</th>
+                        <th>Data</th>
+                        <th>CPF</th>
+                        <th>Rua</th>
+                        <th>Cidade</th>
+                        <th>Telefone Fixo</th>
+                        <th>Celular</th>
+                        <th>Email</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody id="listadeRegistros">
+
+                    </tbody>
+                </table>
+                <div>
+                    <button onclick="visualizar('cadastro', true)" type="button"> Novo Cliente  </button>
+                </div>
+            </div>
+
+        </main>
+
+
+    </div>
+
+
+
+    <!-- Rodapé -->
+    <footer>
+
+
+
+        <a href="#">Politíca de Privacidade</a>
+        <a href="#">Termos de Uso</a>
+
+    </footer>
+
+
+    <!-- link dos icones -->
+    <script src="https://kit.fontawesome.com/1031835dc5.js" crossorigin="anonymous"></script>
+   
+
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+.mainContainer {
+    background-color: rgb(249, 248, 248);
+    width: 90%;
+    height: 80vh;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 2px solid #000;
+    overflow: auto;
+
+}
+p {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+   
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid black;
+    text-align: left;
+}

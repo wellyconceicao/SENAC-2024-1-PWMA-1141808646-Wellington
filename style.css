@@ -1,0 +1,254 @@
+/* Aqui resetamos alguns comportamentos da padroes do html */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+/* Aqui a cor para o fundo do body */
+body {
+    background-color: #d2bdec;
+}
+/* Inicio do Cabeçalho */
+
+/* definindo o estilo do header e das divs dentro dele */
+header {
+
+    height: 10vh;
+    width: 100%;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(10, 74, 211) 13%, rgb(9, 109, 223) 29%, rgba(166,0,248,1) 74%, rgba(89,0,255,1) 89%);
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 60px;
+    padding-left: 10px;
+    border: 2px solid #000;
+   
+}
+
+
+
+/* Logo da Empresa */
+header #logo img {
+   width: 70px;
+   height: 70px;
+   
+    
+}
+
+
+
+/* Ferramentas do Usuario */
+
+header .ferramentas_usu {
+    width: 20%;
+    margin-right: 10px;
+    margin-top: 2px;
+    
+    
+}
+
+header .ferramentas_usu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    font-size: 50px;
+    position: relative;
+    
+    
+}
+
+#notificacao i,
+#configuracao-usu i,
+#perfil-usu i {
+    color: #fff;
+    
+}
+#notificacao i:hover {
+    font-size: 60px;
+}
+#configuracao-usu i:hover {
+    font-size: 60px;
+}
+#perfil-usu i:hover {
+    font-size: 60px;
+}
+
+
+
+/* FIm do Cabeçalho */
+.main_container{
+    display: flex;
+    
+    
+}
+/* Menu Lateral */
+.sidebar {
+    margin: 10px;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgb(10, 98, 156) 0%, rgb(10, 97, 196) 0%, rgba(166,0,248,1) 43%, rgba(89,0,255,1) 94%, rgba(89,0,255,1) 97%);
+    width: 10%;
+    height: 80vh;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #000;
+    
+}
+/* Lista de ferramentas */
+
+.sidebar ul li {
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+.sidebar ul li a {
+    
+    color: white;
+    font-size: 80px;
+    text-decoration: none;
+    
+    
+}
+.sidebar ul li a p {
+    color: white;
+    font-size: 20px;
+   
+}
+
+#item-barra-lateral{
+    text-align: center;
+   
+   
+}
+
+/* Conteúdo da Pagina Principal */
+main {
+    background-color: white;
+    width: 90%;
+    height: 80vh;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 2px solid #000;
+    overflow: auto;
+   
+}
+
+
+
+
+
+#gestaoCli {
+    height: 555px;
+    border: 1px solid black;
+    margin: 10px 10px 20px 10px;
+}
+
+#gestaoCli button {
+    width: 200px;
+    height: 150px;
+    font-size: 30px;
+    border-radius: 50px;
+}
+
+#gestaoCli button:hover {
+    cursor: pointer;
+    background: rgb(28, 145, 218);
+    color: white;
+    border: 2px solid black;
+}
+
+
+ #gestaoCli{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+
+
+
+/* Rodapé */
+
+footer  {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(42, 105, 199) 13%, rgb(14, 79, 175) 29%, rgba(166,0,248,1) 74%, rgba(89,0,255,1) 89%);
+    width: 100%;
+    min-height: 50px;
+    position: fixed;
+    text-align: end;
+    padding-right: 10px;
+    border: 2px solid #000;
+    
+}
+
+footer a {
+    color: #fff;
+    margin-left: 10px;
+    
+}
+
+/* Fim do Rodapé */
+
+
+@media screen and  (max-width: 1920px) {
+    .sidebar ul li {
+        margin-bottom: 10px;
+        list-style: none;
+        margin-top: 0px;
+        
+    }
+
+    .sidebar ul li a {
+        font-size: 60px;
+    }
+
+
+    header .ferramentas_usu ul {
+      margin-top:  -10px;
+    }
+
+    header .ferramentas_usu ul li a {
+        font-size: 60px;
+    }
+
+    header #logo{
+        margin-top: -10px;
+    }
+    header #logo img {
+     
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media screen and(max-width: 768px ) {
+
+    .sidebar {
+        width: 95px;
+    }
+    .sidebar ul li {
+        margin-bottom: 10px;
+        list-style: none;
+        margin-top: 20px;
+        margin-left: -5px;
+        
+    }
+
+    .sidebar ul li a {
+        font-size: 20px;
+    }
+
+    .sidebar ul li a p {
+        font-size: 15px;
+    }
+
+
+
+    
+}
