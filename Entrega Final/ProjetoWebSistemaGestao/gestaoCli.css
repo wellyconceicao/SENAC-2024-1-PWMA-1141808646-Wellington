@@ -1,0 +1,135 @@
+#cadastroCliente{display: none;}
+#listaClientes{display: none;}
+
+body[page=lista] #listaClientes{display: block;}
+body[page=cadastro] #cadastroCliente{display: block;}
+
+
+/* Titulo Cadastro de Clientes */
+main h1 {
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+ 
+}
+
+table th, table td {
+  padding: 10px;
+  border: 1px solid black;
+  text-align: left;
+}
+
+
+/* Definicao do formulario Fieldset */
+main form fieldset {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+  height: 100px;
+  padding-left: 20px;
+
+}
+
+/* Definindo os inputs */
+fieldset input[type='text'] {
+  border-radius: 5px;
+  border: 1px solid #3c3838;
+  height: 25px;
+
+
+}
+
+/* titulo "Dados Pessoais */
+#dadosP {
+  margin: 10px 0 10px 10px;
+}
+
+.dadosPessoais input[type='text'] {
+  margin-right: 74px;
+  margin-bottom: 10px;
+  width: 204px;
+}
+
+#nasc_cpf input {
+  margin-right: 118px;
+
+}
+
+/*  FOrmulario Fieldset de Endereço */
+
+#endereco {
+  height: 100px;
+}
+#endereco  p {
+  padding: 10px 0 0 10px;
+  margin-bottom: 10px;
+ 
+}
+
+#endereco input[type='text'],
+[type='select'] {
+  margin-right: 74px;
+  margin-bottom: 10px;
+  width: 204px;
+}
+
+#cidadeEstado select {
+  margin-right: 125px;
+}
+
+
+
+
+/* Formulario Fieldset de Contato */
+
+#contato {
+  height: 120px;
+}
+
+#contato p {
+  margin: 10px 0 10px 10px;
+}
+
+#telFix_Cel input[type='text'] {
+  margin-right: 50px;
+  margin-bottom: 20px;
+}
+
+#email input[type='email'] {
+  width: 215px;
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+
+
+
+@media (width = 768px){
+  .dadosPessoais input[type='text'] {
+    margin-right: 30px;
+    margin-bottom: 10px;
+    width: 204px;
+  }
+
+  #nasc_cpf input[type='date'] {
+    margin-right: 80px;
+    width: 110px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid black;
+  
+  }
+
+  #nasc_cpf input[type='text'] {
+    margin-right: 40px;
+    width: 150px;
+  
+  }
+  
+
+}

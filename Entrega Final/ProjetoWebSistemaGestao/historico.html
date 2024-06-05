@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico de Compras</title><link rel="stylesheet" href="historico.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="historico.css">
+    
+</head>
+<body>
+
+    <!-- Ínicio do Cabeçalho -->
+
+    <header>
+
+
+
+        <div id="logo">
+            <a href="index.html">
+            <img src="img/icons/guarda-roupa.png" alt="Logo Da Empresa">
+             </a>
+        </div>
+
+        <div class="ferramentas_usu">
+            <ul>
+                <li id="notificacao">
+                    <a href="">
+                        <i class="fa-solid fa-bell"></i>
+                    </a>
+                </li>
+                <li id="configuracao-usu">
+                    <a href="">
+                        <i class="fa-solid fa-gear"></i>
+                    </a>
+
+                </li>
+                <li id="perfil-usu">
+                    <a href="">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+
+                </li>
+            </ul>
+
+        </div>
+
+    </header>
+
+
+    <div class="main_container">
+
+
+        <div class="sidebar">
+            <nav class="side_bar_navigation">
+
+                <ul class="itens-barra-lateral">
+                    <li id="item-barra-lateral">
+                        <a href="cadastro.html">
+
+                            <i class="fa-solid fa-address-card" id="cadastro"></i>
+                            <p >Cadastro De Clientes</p>
+                        </a>
+                    </li>
+                    <li id="item-barra-lateral">
+                        <a href="historico.html">
+                            <i class="fa-solid fa-clock-rotate-left"></i>
+                            <p>Histórico De Compras</p>
+                        </a>
+                    </li>
+                    <li id="item-barra-lateral">
+                        <a href="" >
+                            <i class="fa-solid fa-hand-holding-heart"></i>
+                            <p>Programa De Fidelidade</p>
+                        </a>
+
+                    </li>
+                    <li id="item-barra-lateral">
+                        <a href="">
+                            <i class="fa-solid fa-percent"> </i>
+                            <p>Promoções</p>
+                        </a>
+                    </li>
+                    <li id="item-barra-lateral">
+                        <a href="">
+                            <i class="fa-solid fa-comments"></i>
+                            <p>Comunicação</p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+
+
+        <main>
+            <div class="mainContainer">
+                <p>Nova Compra</p>
+       
+                <form id="formCompras">
+                   <label for="nomeCli">Nome do Cliente:</label>
+                   <input type="text" name="nomeCli" id="nomeCli" required>
+                   <label for="nomeProd">Nome do Produto:</label>
+                   <input type="text" name="nomeProd" id="nomeProd" required>
+                   <label for="dataCompra">Data da Compra:</label>
+                   <input type="date" name="dataCompra" id="dataCompra" required>
+                   <label for="valorCompra">Valor Gasto:</label>
+                   <input type="number" name="valorCompra" id="valorCompra">
+       
+                   <button type="submit"> Registrar Compra </button>
+       
+                </form>
+       
+               
+                   <h1>Histórico de Compras</h1>
+       
+                 
+                       <table id="tabelaHistorico">
+                           <thead>
+                               <tr>
+                                   <th>Cliente</th>
+                                   <th>Produto</th>
+                                   <th>Data</th>
+                                   <th>Valor</th>
+                               </tr>
+                           </thead>
+                           <tbody>
+                               <!-- Compras serão adicionadas aqui -->
+                           </tbody>
+                       </table>
+                 
+              
+       
+       
+           </div>
+
+        </main>
+
+
+    </div>
+
+
+
+  
+    <script src="https://kit.fontawesome.com/1031835dc5.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
